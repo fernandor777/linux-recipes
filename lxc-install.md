@@ -56,13 +56,17 @@ Output:
 
 	[root@localhost ~]#
 
+Set new root password:
+
+	chroot /var/lib/lxc/c7a/rootfs passwd
+
 Containers can be deleted from your host with the lxc-destroy command issued against a container name.
 
-	# lxc-destroy -n mywheezy
+	# lxc-destroy -n c7a
 	
 A container can be cloned from an existing container by issuing lxc-clone command:
 
-	# lxc-clone mydeb mydeb-clone
+	# lxc-clone c7a c7a-clone
 	
 And finally, all created containers reside in /var/lib/lxc/ directory. If for some reason you need to manually adjust container settings you must edit the config file from each container directory.
 
