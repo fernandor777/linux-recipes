@@ -17,8 +17,19 @@ check LXC kernel virtualization status by issuing the below command.
 
     # lxc-checkconfig
 
+
+## Create a container
+
 View avalaible templates:
 
-	# ls -alh /usr/share/lxc/templates/
+	$ ls -alh /usr/share/lxc/templates/
+
+Syntax:
+	
+	# lxc-create -n container_name -t container_template
+	
+	# lxc-create -n container_name -t container_template -- -r distro_release -a distro_architercture 
+	
+	
 
 
