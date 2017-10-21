@@ -25,11 +25,15 @@ View avalaible templates:
 	$ ls -alh /usr/share/lxc/templates/
 
 Syntax:
+
+https://us.images.linuxcontainers.org/
 	
 	# lxc-create -n container_name -t container_template
 	
-	# lxc-create -n container_name -t container_template -- -r distro_release -a distro_architercture 
+	# lxc-create -n container_name -t container_template -- -R distro_release -a distro_architercture 
 	
-	
+Examples:
+
+	# lxc-create -n c7a -t centos -- -R 7 	
 
 
