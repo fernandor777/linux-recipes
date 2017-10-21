@@ -36,4 +36,24 @@ Examples:
 
 	# lxc-create -n c7a -t centos -- -R 7 	
 
+Output:
+
+	Container rootfs and config have been created.
+	Edit the config file to check/enable networking setup.
+
+	The temporary root password is stored in:
+
+			'/var/lib/lxc/c7a/tmp_root_pass'
+
+
+	The root password is set up as expired and will require it to be changed
+	at first login, which you should do as soon as possible.  If you lose the
+	root password or wish to change it without starting the container, you
+	can change it from the host by running the following command (which will
+	also reset the expired flag):
+
+			chroot /var/lib/lxc/c7a/rootfs passwd
+
+	[root@localhost ~]#
+	
 
